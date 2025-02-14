@@ -267,13 +267,14 @@ video {
   .hero-text h1 {
     font-size: 5rem; /* Se reduce 1rem */
     font-weight: bold;
-    margin-bottom: 10px;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombra más impactante */
   }
 
   .hero-text p {
     font-size: 3rem;
-    margin-bottom: 15px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombra más impactante */
   }
 
   .cta-button {
@@ -307,15 +308,14 @@ video {
   }
 
   .hero-text h1 {
-    font-size: 3rem; /* Se reduce 1rem */
+    font-size: 4rem; /* Se reduce 1rem */
     font-weight: bold;
-    margin-bottom: 10px;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombra más impactante */
   }
 
   .hero-text p {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
   }
 
   .cta-button {
