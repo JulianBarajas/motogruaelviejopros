@@ -1,0 +1,325 @@
+/* Variables de colores */
+:root {
+  --color-primario: #f24957;
+  --color-texto: #253340;
+  --color-acento: #d9981e;
+  --color-fondo: #f2ebdc;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sección Hero */
+.hero {
+  background: url("Img/BackgroundconFILTRO.png") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.4); /* Fondo negro semitransparente */
+  z-index: 1;
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor */
+}
+
+.hero-text h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 120px; /* Título más grande */
+  font-weight: bold;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); /* Sombra más impactante */
+}
+
+.hero-text p {
+  font-size: 60px;
+}
+
+/* Mantiene la barra de navegación fija en la parte superior */
+.custom-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+}
+
+/* Ajusta el contenedor de la barra */
+.custom-navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Distribuye los enlaces */
+.nav-left,
+.nav-center,
+.nav-right {
+  flex: 1;
+  text-align: center;
+}
+
+/* Estilo de los enlaces */
+.custom-navbar a.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem; /* Tamaño normal */
+  padding: 5px 10px;
+  letter-spacing: 2px;
+}
+
+.custom-navbar a.nav-link:hover {
+  cursor: pointer;
+}
+
+/* Botón de WhatsApp */
+.btn-whatsapp {
+  background-color: var(--color-acento);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-whatsapp:hover {
+  /* Si deseas oscurecer el color al pasar el cursor, puedes definir un color alternativo manualmente */
+  background-color: #b87f18;
+}
+
+#servicios p {
+  font-size: 25px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Espacio entre imágenes */
+}
+
+.gallery a {
+  display: block;
+  width: 250px; /* Mismo ancho para todos los enlaces */
+}
+
+.gallery img {
+  width: 100%; /* Hace que las imágenes ocupen todo el ancho del <a> */
+  height: 200px;
+  object-fit: cover; /* Evita deformaciones */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+video {
+  border-radius: 8px;
+}
+
+.contacto {
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+.subtitulo-contacto {
+  font-weight: bold;
+  color: #ffa500;
+}
+
+.contacto p {
+  color: var(--color-texto);
+  font-size: 18px;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info a {
+  color: #964b00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: var(--color-texto);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 85px;
+  right: 25px;
+  /* background-color: #ffa500; */
+  color: #ffa500;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-height: 90%;
+    max-width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 5rem; /* Se reduce 1rem */
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombra más impactante */
+  }
+
+  .hero-text p {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+
+  .cta-button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .custom-navbar {
+    padding: 10px; /* Reduce el padding general */
+  }
+
+  .custom-navbar a.nav-link {
+    font-size: 0.8rem; /* Reduce el tamaño del texto */
+    padding: 5px; /* Reduce el espaciado de los enlaces */
+    letter-spacing: 2px;
+  }
+
+  #servicios p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-height: 90%;
+    max-width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem; /* Se reduce 1rem */
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombra más impactante */
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .cta-button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
