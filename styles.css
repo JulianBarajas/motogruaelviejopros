@@ -123,15 +123,11 @@ body {
   background-color: #b87f18;
 }
 
-#servicios p {
-  font-size: 25px;
-}
-
 h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .gallery {
@@ -159,8 +155,49 @@ h2 {
   transform: scale(1.05);
 }
 
-video {
-  border-radius: 8px;
+/* Ajuste del título */
+.titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 60px;
+}
+
+/* Contenedor de texto y video */
+.servicios-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 50px; /* Más separación entre texto y video */
+  padding: 40px 10%; /* Aumenta el espacio lateral */
+  flex-wrap: wrap; /* Diseño adaptable en móviles */
+}
+
+/* Ajustes para el texto */
+.servicios-texto {
+  flex: 1;
+  max-width: 500px;
+  text-align: justify;
+  padding-left: 20px; /* Agrega un margen interno para separarlo del borde */
+  font-size: 25px;
+}
+
+/* Ajustes para el video */
+.servicios-video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ajuste del video */
+.servicios-video video {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  height: 300px; /* Mantiene la proporción */
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .contacto {
@@ -285,8 +322,17 @@ video {
     letter-spacing: 2px;
   }
 
-  #servicios p {
-    font-size: 20px;
+  .servicios-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .servicios-texto {
+    max-width: 100%;
+    padding-left: 0; /* Elimina el margen en móviles */
+  }
+  .servicios-container {
+    gap: 20px; /* Más separación entre texto y video */
   }
 }
 
